@@ -57,4 +57,16 @@ public class CountoffTest {
         Assertions.assertEquals(expect,actual);
     }
 
+    @Test
+    public void should_return_FizzBuzz_when_play_game_given_15() {
+        //give
+        int number = 7;
+        //when
+        Countoff countoff = new Countoff();
+        String actual = countoff.play(number);
+        //then
+        String expect = "Whizz";
+        Assertions.assertEquals(expect,actual);
+    }
+
 }
