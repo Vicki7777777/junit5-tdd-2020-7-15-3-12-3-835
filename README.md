@@ -2,14 +2,14 @@
 
 ## Demand description
 
-  You are a PE teacher.Five minutes before your class is dismissed, you decides to play a game with all the 120 students at your class. The rule is as below: 
+  You are a PE teacher.Five minutes before your class is dismissed, you decides to play a countoff with all the 120 students at your class. The rule is as below: 
 
 
 1. Let all the students stand in one line and everyone counts off in order.
 2. During counting off, if the number is the multiples of the first special number, number three (3), then the student should say Fizz; if the number is the multiples of the second special number, number five (5), say Buzz; if the multiples of the third special number, number seven (7), say Whizz. 
 3. During counting off, if the number is the multiples of two special numbers, eg. the first and second numbers, then a student should say FizzBuzz instead of this number, so on and so forth. If the number is the multiples of three special numbers, say FizzBuzzWhizz.
   
-Now you need to design a programme to simulate this game. The output should be output fragments: 
+Now you need to design a programme to simulate this countoff. The output should be output fragments: 
 
 ```
 1

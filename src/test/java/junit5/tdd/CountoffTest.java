@@ -5,8 +5,8 @@ import org.junit.jupiter.api.Test;
 
 import java.io.ByteArrayOutputStream;
 
-public class GameTest {
-    private Game game;
+public class CountoffTest {
+    private Countoff countoff;
     private ByteArrayOutputStream outContent = new ByteArrayOutputStream();
 
     @Test
@@ -14,8 +14,8 @@ public class GameTest {
         //give
         int given = 1;
         //when
-        Game game = new Game();
-        String actual = game.play(given);
+        Countoff countoff = new Countoff();
+        String actual = countoff.play(given);
         //then
         String expect = "1";
         Assertions.assertEquals(expect,actual);
@@ -26,8 +26,8 @@ public class GameTest {
         //give
         int given = 3;
         //when
-        Game game = new Game();
-        String actual = game.play(given);
+        Countoff countoff = new Countoff();
+        String actual = countoff.play(given);
         //then
         String expect = "Fizz";
         Assertions.assertEquals(expect,actual);
