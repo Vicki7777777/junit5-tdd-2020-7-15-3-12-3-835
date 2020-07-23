@@ -78,6 +78,8 @@ public class CountoffTest {
         String expect = "BuzzWhizz";
         Assertions.assertEquals(expect,actual);
     }
+
+    @Test
     public void should_return_FizzWhizz_when_play_game_given_21() {
         //give
         int number = 21;
@@ -86,6 +88,18 @@ public class CountoffTest {
         String actual = countoff.play(number);
         //then
         String expect = "FizzWhizz";
+        Assertions.assertEquals(expect,actual);
+    }
+
+    @Test
+    public void should_return_FizzBuzzWhizz_when_play_game_given_105() {
+        //give
+        int number = 105;
+        //when
+        Countoff countoff = new Countoff();
+        String actual = countoff.play(number);
+        //then
+        String expect = "FizzBuzzWhizz";
         Assertions.assertEquals(expect,actual);
     }
 
