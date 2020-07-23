@@ -60,12 +60,23 @@ public class CountoffTest {
     @Test
     public void should_return_FizzBuzz_when_play_game_given_15() {
         //give
-        int number = 7;
+        int number = 15;
         //when
         Countoff countoff = new Countoff();
         String actual = countoff.play(number);
         //then
-        String expect = "Whizz";
+        String expect = "FizzBuzz";
+        Assertions.assertEquals(expect,actual);
+    }
+    @Test
+    public void should_return_BuzzWhizz_when_play_game_given_35() {
+        //give
+        int number = 35;
+        //when
+        Countoff countoff = new Countoff();
+        String actual = countoff.play(number);
+        //then
+        String expect = "BuzzWhizz";
         Assertions.assertEquals(expect,actual);
     }
 
