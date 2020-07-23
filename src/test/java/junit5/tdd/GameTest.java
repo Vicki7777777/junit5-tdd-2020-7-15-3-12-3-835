@@ -10,7 +10,7 @@ public class GameTest {
     private ByteArrayOutputStream outContent = new ByteArrayOutputStream();
 
     @Test
-    public void should_return_number_when_play_game_given_1(){
+    public void should_return_1_when_play_game_given_1(){
         //give
         int given = 1;
         //when
