@@ -21,4 +21,15 @@ public class GameTest {
         Assertions.assertEquals(expect,actual);
     }
 
+    @Test
+    void public void should_return_Fizz_when_play_game_given_3() {
+        //give
+        int given = 3;
+        //when
+        Game game = new Game();
+        String actual = game.play(given);
+        //then
+        String expect = "Fizz";
+        Assertions.assertEquals(expect,actual);
+    }
 }
