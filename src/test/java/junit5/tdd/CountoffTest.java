@@ -7,7 +7,6 @@ import java.io.ByteArrayOutputStream;
 
 public class CountoffTest {
     private Countoff countoff;
-    private ByteArrayOutputStream outContent = new ByteArrayOutputStream();
 
     @Test
     public void should_return_1_when_play_game_given_1(){
@@ -77,6 +76,16 @@ public class CountoffTest {
         String actual = countoff.play(number);
         //then
         String expect = "BuzzWhizz";
+        Assertions.assertEquals(expect,actual);
+    }
+    public void should_return_FizzWhizz_when_play_game_given_21() {
+        //give
+        int number = 21;
+        //when
+        Countoff countoff = new Countoff();
+        String actual = countoff.play(number);
+        //then
+        String expect = "FizzWhizz";
         Assertions.assertEquals(expect,actual);
     }
 
