@@ -12,6 +12,10 @@ public class Game {
     }
     public String play(int number){
         this.gameNumber = number;
+        if(number % 3 == 0){
+            String result = String.valueOf(gameNumber);
+            return result;
+        }
         String result = String.valueOf(gameNumber);
         return result;
     }

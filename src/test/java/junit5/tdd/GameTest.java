@@ -22,7 +22,7 @@ public class GameTest {
     }
 
     @Test
-    void public void should_return_Fizz_when_play_game_given_3() {
+    public void should_return_Fizz_when_play_game_given_3() {
         //give
         int given = 3;
         //when
