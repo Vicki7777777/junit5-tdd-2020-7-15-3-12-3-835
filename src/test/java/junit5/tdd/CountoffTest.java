@@ -41,7 +41,7 @@ public class CountoffTest {
         Countoff countoff = new Countoff();
         String actual = countoff.play(number);
         //then
-        String expect = "Fizz";
+        String expect = "Buzz";
         Assertions.assertEquals(expect,actual);
     }
 }

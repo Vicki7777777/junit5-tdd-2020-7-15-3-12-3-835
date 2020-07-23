@@ -11,11 +11,15 @@ public class Countoff {
         this.gameNumber = gameNumber;
     }
     public String play(int number){
-        String result;
+        String result = "";
         this.gameNumber = number;
         if(number % 3 == 0){
-            result = "Fizz";
-        }else {
+            result += "Fizz";
+        }
+        if (number % 5 == 0){
+            result += "Buzz";
+        }
+        if (result.equals("")){
             result = String.valueOf(gameNumber);
         }
         return result;
