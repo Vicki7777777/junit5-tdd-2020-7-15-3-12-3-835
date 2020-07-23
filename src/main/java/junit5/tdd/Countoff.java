@@ -19,6 +19,9 @@ public class Countoff {
         if (number % 5 == 0){
             result += "Buzz";
         }
+        if (number % 7 == 0){
+            result += "Whizz";
+        }
         if (result.equals("")){
             result = String.valueOf(gameNumber);
         }
