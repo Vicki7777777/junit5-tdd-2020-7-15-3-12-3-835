@@ -32,4 +32,16 @@ public class CountoffTest {
         String expect = "Fizz";
         Assertions.assertEquals(expect,actual);
     }
+
+    @Test
+    public void should_return_Buzz_when_play_game_given_5() {
+        //give
+        int number = 5;
+        //when
+        Countoff countoff = new Countoff();
+        String actual = countoff.play(number);
+        //then
+        String expect = "Fizz";
+        Assertions.assertEquals(expect,actual);
+    }
 }
